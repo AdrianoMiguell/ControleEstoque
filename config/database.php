@@ -147,7 +147,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [
@@ -170,4 +170,40 @@ return [
 
     ],
 
+    'fornecedores' =>
+    [
+        'nomes' => [
+            'Nome',
+            'Identificação',
+            'Telefone',
+            'Email',
+            'Cep',
+            'Estado',
+            'Cidade',
+            'Bairro',
+            'Rua',
+            'Número',
+            'Complemento',
+        ],
+        'colunas' => [
+            'nome',
+            'identificacao',
+            'telefone',
+            'email',
+            'cep',
+            'estado',
+            'cidade',
+            'bairro',
+            'rua',
+            'numero',
+            'complemento',
+        ],
+    ],
+
+    'movimentacoes' => [
+        'filter_movs' => [
+            'nome' => ['Saídas - Últimos 30 dias', 'Saídas - Últimos 60 dias', 'Maiores Saídas', 'Maiores Entradas'],
+            'opcao' => ['saidas-30-dias', 'saidas-6-meses', 'maiores-saidas', 'maiores-entradas'],
+        ],
+    ]
 ];

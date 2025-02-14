@@ -20,6 +20,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'type',
         'password',
     ];
 
@@ -45,4 +46,17 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function isAdmin(): bool {
+        if ($this->type === config('auth.admin.users.type')) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function Movimentacao() {
+        $this->hasMany(Movimentacao::class);
+    }
+    
 }

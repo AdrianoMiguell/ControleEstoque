@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Movimentacao;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class MovimentacaoSeeder extends Seeder
 {
@@ -12,6 +14,8 @@ class MovimentacaoSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        // DB::table('movimentacao')->insert([
+        // ]);
+        Movimentacao::factory()->count(25)->create();
     }
 }

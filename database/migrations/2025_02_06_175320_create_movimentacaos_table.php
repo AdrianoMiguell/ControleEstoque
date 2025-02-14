@@ -13,6 +13,28 @@ return new class extends Migration
     {
         Schema::create('movimentacaos', function (Blueprint $table) {
             $table->id();
+            $table->enum('tipo', ['0', '1'])->comment("0 é igual a saida, 1 é igual a entrada");
+            $table->integer('quantidade');
+            $table->decimal('valor_unitario', 10, 2);
+            $table->decimal('valor_total', 10, 2);
+            $table->foreignId('produto_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+                $table->foreignId('destino_id')
+                ->nullable()
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignId('fornecedor_id')
+                ->nullable()
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignId('user_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
