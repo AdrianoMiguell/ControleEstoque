@@ -11,7 +11,7 @@ O github disponibiliza de diversos modos para fazer upload do codigo.
 Aqui estão duas dessas formas:
 <p style="display: block"> 
    <strong> 1 - </strong>  Vá até uma pasta reservada para o projeto e use o comando no "git bash" : 
-    https://github.com/AdrianoMiguell/SiteCursos-laravel.git
+    https://github.com/AdrianoMiguell/ControleEstoque.git
 </p>
 <p style="display: block"> 
     <strong> 2 - </strong>  Baixe o arquivo .zip do código, clicando no botão "Download .ZIP"
