@@ -33,13 +33,17 @@ Aqui estão duas dessas formas:
 
 -- Abra o terminal, e na pasta do projeto, execute o código: ``` composer install ```
 
+-- Execute também o seguinte código: ``` npm install ```
+
 -- Ligue o seu servidor local apache e o servidor de banco de dados
 
 -- Acesse a sua ferramenta de banco de dados, e crie um banco de dados com um nome que desejar (Ex: Cursos);
 
 -- Agora, vá a raiz do código, copie um arquivo chamado  ``` .env.example ```  e cole-o nesse mesmo local, trocando o nome para apenas ```.env```.
 
--- Encontre esse trecho do código ``` DB_DATABASE ```  e troque o nome do banco, pelo nome do banco de dados que você acabou de criar. 
+-- Encontre o trecho com o código ```DB_CONNECTION``` e troque o nome do banco para o que será usado (ex: mysql, sqlite, ...).
+
+-- Localize também o trecho ``` DB_DATABASE ```  e troque para o nome do seu banco de dados. 
 
 --Também encontre o trecho do código ```FILESYSTEM_DISK``` e troque o valor "local" para "public".
 
