@@ -1,0 +1,18 @@
+input[type="search"] {
+    box-shadow: none !important;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type="search"]::-moz-search-clear-button {
+    display: none;
+}
+
+.alert {
+    z-index: 999;
+}
+
+.select2-container {
+    z-index: 9999 !important;
+}

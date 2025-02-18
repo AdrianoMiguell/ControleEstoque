@@ -1,0 +1,23 @@
+
+.btn-main {
+    border: none !important;
+    /* box-shadow: none !important; */
+    color: white !important;
+    background-color: #1c1b1d !important;
+    border-radius: 0;
+  }
+  
+  .btn-main:not(:hover),
+  .btn-main:not(:active),
+  .btn-main:not(:focus),
+  .btn-main:not(:focus-visible) {
+    opacity: 0.9;
+  }
+  
+  .btn-main:hover,
+  .btn-main:active,
+  .btn-main:focus,
+  .btn-main:focus-visible {
+    opacity: 1;
+  }
+  

@@ -16,9 +16,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/build/css/geral.css">
-    <link rel="stylesheet" href="/build/css/navbar.css">
-    <link rel="stylesheet" href="/build/css/button.css">
+    <link rel="stylesheet" href="/css/geral.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/button.css">
 </head>
 
 <body class="bg-light vh-100">
@@ -27,7 +27,7 @@
 
     <main class="d-flex align-items-center justify-content-center p-5">
         <div class="container text-center p-5 bg-white shadow rounded-4">
-            <img src="/build/assets/agro_sistem.svg" alt="Ilustração Agro" class="img-fluid mb-4"
+            <img src="/assets/agro_sistem.svg" alt="Ilustração Agro" class="img-fluid mb-4"
                 style="max-width: 500px;">
 
             <h1 class="fw-bold text-success">Bem-vindo ao AGRO Estoque</h1>

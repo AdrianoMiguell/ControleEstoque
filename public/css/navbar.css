@@ -1,0 +1,77 @@
+.navbar {
+    background-color: #2f2f2f;
+    padding: 1rem 2rem;
+}
+.navbar .nav-link {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: medium;
+    color: #fdf5f5;
+    opacity: 0.95;
+}
+.navbar .nav-link:not(.nav-link-profile) {
+    border-bottom: 1.5px solid transparent;
+}
+.navbar .nav-link:not(.nav-link-profile):hover,
+.navbar .nav-link:not(.nav-link-profile):active,
+.navbar .nav-link:not(.nav-link-profile):focus,
+.navbar .nav-link:not(.nav-link-profile):focus-visible {
+    opacity: 1;
+    color: white;
+    border-color: #cbd5e1;
+}
+
+.navbar .nav-link.nav-link-profile:hover,
+.navbar .nav-link.nav-link-profile:active,
+.navbar .nav-link.nav-link-profile:focus,
+.navbar .nav-link.nav-link-profile:focus-visible,
+.navbar .nav-link.nav-link-profile.show {
+    color: white;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active,
+.navbar .nav-link:focus,
+.navbar .nav-link:focus-visible {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: medium;
+    color: #ebf1f8;
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+.navbar .dropdown .dropdown-menu {
+    position: absolute;
+    left: auto !important;
+    right: 0 !important;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item {
+    width: auto !important;
+}
+
+.app-logo, .navbar .navbar-brand {
+    font-size: 24pt;
+    font-family: "Contrail One", serif;
+}
+ 
+.navbar .navbar-brand {
+    color: #ebf1f8;
+}
+.navbar .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.navbar .navbar-toggler .toggler-icon {
+    color: #ebf1f8;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}

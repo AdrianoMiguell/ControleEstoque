@@ -3,7 +3,7 @@
 @section('links_css')
     <!-- Adicione o CSS do Select2 -->
     {{-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" /> --}}
-    <link rel="stylesheet" href="/build/css/table.css">
+    <link rel="stylesheet" href="/css/table.css">
 @endsection
 
 {{-- 
@@ -122,7 +122,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script src="/build/js/select2.js"></script> --}}
+    <script src="/js/select2.js"></script> --}}
     <!-- Adicionar no <head> -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
